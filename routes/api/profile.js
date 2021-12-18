@@ -70,7 +70,6 @@ router.post(
         : skills.split(',').map((skill) => ' ' + skill.trim()),
       ...rest
     };
-
     // Build socialFields object
     const socialFields = { youtube, twitter, instagram, linkedin, facebook };
 
