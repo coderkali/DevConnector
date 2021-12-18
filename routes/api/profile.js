@@ -80,7 +80,6 @@ router.post(
     }
     // add to profileFields
     profileFields.social = socialFields;
-
     try {
       // Using upsert option (creates new doc if no match is found):
       let profile = await Profile.findOneAndUpdate(
