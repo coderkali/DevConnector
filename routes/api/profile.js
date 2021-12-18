@@ -78,7 +78,7 @@ router.post(
       if (value && value.length > 0)
         socialFields[key] = normalize(value, { forceHttps: true });
     }
-    // add to profileFields
+    
     profileFields.social = socialFields;
     try {
       // Using upsert option (creates new doc if no match is found):
