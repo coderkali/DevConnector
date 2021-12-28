@@ -208,6 +208,7 @@ router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
       ({ id }) => id !== req.params.comment_id
     );
 
+    //save user
     await post.save();
 
     return res.json(post.comments);
