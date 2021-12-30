@@ -7,6 +7,8 @@ const Post = require('../../model/Post');
 const User = require('../../model/User');
 const checkObjectId = require('../../middleware/checkObjectId');
 
+
+
 // @route    POST api/posts
 // @desc     Create a post
 // @access   Private
