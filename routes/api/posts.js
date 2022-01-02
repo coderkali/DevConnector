@@ -84,11 +84,12 @@ router.delete('/:id', [auth, checkObjectId('id')], async (req, res) => {
     if (!post) {
       return res.status(404).json({ msg: 'Post not found' });
     }
-
+    console.log(post.user.toString());
+    console.log(req.user.id);
     // Check user
-    if (post.user.toString() !== req.user.id) {
-      return res.status(401).json({ msg: 'User not authorized' });
-    }
+    // if (post.user.toString() !== req.user.id) {
+    //   return res.status(401).json({ msg: 'User not authorized' });
+    // }
 
     await post.remove();
 
@@ -205,11 +206,9 @@ router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
     if (comment.user.toString() !== req.user.id) {
       return res.status(401).json({ msg: 'User not authorized' });
     }
-
     post.comments = post.comments.filter(
       ({ id }) => id !== req.params.comment_id
     );
-
     //save user
     await post.save();
     return res.json(post.comments);
