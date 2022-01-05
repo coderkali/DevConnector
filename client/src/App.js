@@ -9,13 +9,8 @@ function App() {
         <p>
           React App Reloaded
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+          Start React
         </a>
       </header>
     </div>
