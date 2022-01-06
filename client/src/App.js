@@ -10,7 +10,7 @@ function App() {
           React App Reloaded
         </p>
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Start React
+          Start React with node
         </a>
       </header>
     </div>
