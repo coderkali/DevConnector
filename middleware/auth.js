@@ -21,7 +21,7 @@ module.exports = function (req, res, next) {
       }
     });
   } catch (err) {
-    console.error('something wrong with auth middleware');
+    console.error('something wrong with auth middleware,Please Check');
     res.status(500).json({ msg: 'Server Error' });
   }
 };
