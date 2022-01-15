@@ -1,20 +1,12 @@
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import './App.css';
+import Navbar from './componenet/layout/Navbar';
+import Landing from './componenet/layout/Landing';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          React App Reloaded
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Start React with node
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const App = () => (
+    <Fragment>
+      <Navbar />
+      <Landing />
+    </Fragment>
+)
 export default App;
