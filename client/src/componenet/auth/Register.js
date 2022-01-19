@@ -8,11 +8,8 @@ export const Register = () => {
         password:'',
         password2:''
     });
-
     const { name, email, password, password2} = formData;
-    
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value })
-
     const onSubmit = async e => {
         e.preventDefault();
         if(password != password2){
