@@ -13,11 +13,11 @@ export const Login = () => {
     const onSubmit = async e => {
         e.preventDefault();
             console.log(formData)
-            // const newUser = {
-            //     name,
-            //     email,
-            //     password,
-            // }
+            const newUser = {
+                name,
+                email,
+                password,
+            }
             // try{
             //     const config = {
             //         headers: {
