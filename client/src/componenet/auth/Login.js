@@ -31,8 +31,6 @@ export const Login = () => {
             // }catch(err) {
             //     console.log(err.response.data);
             // }
-
-        
     }
 
 
@@ -66,8 +64,6 @@ export const Login = () => {
       </p>
 
     </Fragment>
-        
-    
 }
 
 export default Login;
