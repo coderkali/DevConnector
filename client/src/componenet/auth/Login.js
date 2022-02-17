@@ -18,19 +18,7 @@ export const Login = () => {
                 email,
                 password,
             }
-            // try{
-            //     const config = {
-            //         headers: {
-            //             'Content-Type': 'application/json'
-            //         }
-            //     }
-
-            //     const body = JSON.stringify(newUser);
-            //     const res = await axios.post('/api/users',body,config);
-            //      console.log(res);
-            // }catch(err) {
-            //     console.log(err.response.data);
-            // }
+          
     }
 
 
